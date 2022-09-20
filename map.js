@@ -3,8 +3,8 @@
 // REQS: use .map
 
 export const getCountryNames = (countries) => {
-    const countryNames = countries.map((country) => country.name);
-    return countryNames;
+  const countryNames = countries.map((country) => country.name);
+  return countryNames;
 };
 
 // INPUT: the array of countries from data.js
@@ -19,5 +19,6 @@ export const getCountryCodes = (countries) => {
 // OUTPUT: an array of the brands
 // REQS: use .map
 
-export const getBrands = (brands) => {};
+export const getBrands = (brands) => {
   return brands.map((brand) => brand.brand);
+};
