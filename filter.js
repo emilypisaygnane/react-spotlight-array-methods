@@ -3,7 +3,7 @@
 // REQS: use .filter
 
 export const filterOceania = (countries) => {
-  return countries.filter((country) => country.continent.includes('Oceania'));
+  return countries.filter((country) => country.continent && country.continent.includes('Oceania'));
 };
 
 // INPUT: the array of countries from data.js
@@ -17,6 +17,7 @@ export const filterAu = (countries) => {
 // INPUT: the array of dogs from data.js
 // OUTPUT: only dogs that are 2 years old or younger
 // REQS: use .filter
+
 export const filterYoungDogs = (dogs) => {
   return dogs.filter((dogs) => dogs.age <= 2);
 };
