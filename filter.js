@@ -3,7 +3,7 @@
 // REQS: use .filter
 
 export const filterOceania = (countries) => {
-  return countries.filter((country) => country.iso2.includes('Oceania'));
+  return countries.filter((country) => country.continent.includes('Oceania'));
 };
 
 // INPUT: the array of countries from data.js
@@ -25,5 +25,5 @@ export const filterYoungDogs = (dogs) => {
 // OUTPUT: a list of names of dogs that are 2 years old or younger
 // REQS: use .filter AND .map OR use your filterYoungDogs function and a map
 export const getYoungDogNames = (dogs) => {
-  // return filterYoungDogs(dogs).map((dog) => dog.name);
+  return filterYoungDogs(dogs).map((dog) => dog.name);
 };
